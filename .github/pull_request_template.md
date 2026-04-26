@@ -12,7 +12,7 @@ Explain why this does not introduce unsafe behavior.
 
 ## What state does this create?
 
-Describe the new system behavior after the fix.
+Describe the new system behavior after the proposed change.
 
 ---
 

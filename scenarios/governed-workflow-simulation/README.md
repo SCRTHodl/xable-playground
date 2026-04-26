@@ -1,13 +1,13 @@
 # Governed Workflow Simulation
 
-**Status: ❌ Broken by design**
+**Status: ❌ Unsafe by design until validated**
 
 Run:
 ```bash
 npm run scenario:workflow
 ```
 
-You should see failing tests. Your goal is to fix the issue safely.
+You should see failing tests. Your goal is to evaluate whether the proposed change is safe to apply.
 
 ## Problem
 
@@ -65,3 +65,18 @@ This demonstrates Xable as more than a code fixer - it's a safe reasoning layer 
 - Portable memory
 - Explainable proposal
 - Blocked when unsafe
+
+## Run locally
+
+```bash
+node ../../packages/xable-runner/dist/cli.js simulate --repo .
+```
+
+This generates a local patch candidate and access receipt.
+
+## Decision
+
+Would you approve this change?
+
+- Approve (Kairos — safe to act)
+- Reject (Korros — should not act yet)

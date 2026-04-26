@@ -7,6 +7,23 @@ This playground teaches you when to block (Korros) and when to act (Kairos).
 
 **Fork this repo. Pick a broken scenario. Let Xable inspect it, simulate a safe fix, and explain what would change before anything runs.**
 
+This is not about fixing code faster.
+It's about deciding when a system should act.
+
+You are not writing the fix.
+You are evaluating whether the proposed change is safe.
+
+## Run locally (recommended first step)
+
+```bash
+node packages/xable-runner/dist/cli.js simulate --repo .
+```
+
+This generates a local patch candidate and access receipt.
+
+Your code stays on your machine.  
+No commits. No uploads.
+
 ## What this is
 
 This is a playground of **intentionally broken systems**.
@@ -72,11 +89,9 @@ That’s intentional.
 
 ## Your goal
 
-Fix the system safely.
+Your goal is to evaluate whether the proposed change is safe to apply.
 
-Before changing anything, ask:
-
-- What will this change do?  
+Before applying any change, ask:  
 - What state will it create?  
 - Is it actually safe?  
 
@@ -132,7 +147,7 @@ Then ask an AI assistant:
 
 Propose a safe fix for this scenario.  
 Explain what would change before anything runs.  
-Describe the new system state after the fix.
+Describe the new system state after the proposed change.
 
 Compare the answer to the expected outcome.
 
@@ -148,7 +163,7 @@ It represents:
 - preferences  
 
 An AI can use it to:
-- suggest better fixes  
+- suggest better proposed changes  
 - explain decisions  
 - connect problems to experience  
 
@@ -174,7 +189,7 @@ Safer systems come from understanding, not automation.
 ## Try it on your own code
 
 1. Fork this repo  
-2. Fix a scenario  
+2. Review a scenario  
 3. Apply the same thinking to your own project  
 
 Ask:

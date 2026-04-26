@@ -16,7 +16,7 @@ These scenarios require reasoning across multiple parts.
 
 ## Your task
 
-Fix the system so that:
+Review the generated patch so that:
 
 - state is consistent
 - invalid actions are blocked

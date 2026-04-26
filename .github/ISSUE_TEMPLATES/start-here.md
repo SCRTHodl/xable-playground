@@ -43,17 +43,17 @@ Ask an AI assistant:
 
 Propose a safe fix for this scenario.
 Explain what would change before anything runs.
-Describe the new system state after the fix.
+Describe the new system state after the proposed change.
 
 ---
 
 ## When you're done
 
 - Fork the repo
-- Commit your fix
+- Commit your change
 - Open a PR
 - Share what you learned
 
 ---
 
-If this was interesting, star the repo and share your fix.
+If this was interesting, star the repo and share your change.

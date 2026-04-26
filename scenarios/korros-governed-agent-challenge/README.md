@@ -1,6 +1,6 @@
 # Korros Governed Agent Challenge (Expert)
 
-**Status: ❌ Broken by design**
+**Status: ❌ Unsafe by design until validated**
 
 **Difficulty:** Frontier / Expert
 
@@ -9,7 +9,7 @@ Run:
 npm run scenario:korros-governed-agent
 ```
 
-You should see failing tests. Your goal is to fix the issue safely.
+You should see failing tests. Your goal is to evaluate whether the proposed change is safe to apply.
 
 ---
 
@@ -166,3 +166,18 @@ Only when all checks pass can the system reach Kairos (safe to act).
 - Explainable blocking
 - Safe next-move generation
 - Multi-step reasoning
+
+## Run locally
+
+```bash
+node ../../packages/xable-runner/dist/cli.js simulate --repo .
+```
+
+This generates a local patch candidate and access receipt.
+
+## Decision
+
+Would you approve this change?
+
+- Approve (Kairos — safe to act)
+- Reject (Korros — should not act yet)
